@@ -62,6 +62,16 @@ body {
      max-width: 1366px;
   }
 
+
+  /*Paginas*/
+
+  .navbar .logo-h {
+    height: 50px;
+  }
+
+p{
+    color: blue;
+}
 @media (min-width: 768px){
     .navbar {
         padding: 20px 50px 0 50px;
@@ -77,6 +87,11 @@ body {
             }
         }
     }
-    
+
+
+     /*Paginas*/
+    .navbar .logo-h {
+        height: 80px;
+      }
     
 }
