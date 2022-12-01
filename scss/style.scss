@@ -97,37 +97,41 @@ body {
         justify-content: center;
 
         .img-sobre-mi-1 {
-            background-color: green;
             width: 50%;
         }
 
         .img-sobre-mi-2 {
-            background-color: blue;
             width: 50%;
 
         }
     }
 
-    .parrafo-sobre-mi {
-        width: 80%;
-        color: #ffffff;
-        margin: auto;
-        padding: 20px 0 30px 0;
+    .contenedor-parrafo-sobre-mi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
 
-    }
+        .parrafo-sobre-mi {
+            width: 80%;
+            color: #ffffff;
+            margin: auto;
+            padding: 20px 0 30px 0;
+        }
 
-    h4 {
-        color: #fff;
-        margin: auto;
-        margin-top: 30px;
-    }
+        h4 {
+            color: #fff;
+            margin: auto;
+            margin-top: 30px;
+        }
 
-    hr {
-        width: 40px;
-        height: 2px;
-        color: #fff;
-        margin: auto;
-        margin-top: 10px;
+        hr {
+            width: 40px;
+            height: 2px;
+            color: #fff;
+            margin: auto;
+            margin-top: 10px;
+        }
     }
 }
 
@@ -165,7 +169,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
+    padding: 30px 0;
     background-color: $verde-5;
 
     h4 {
@@ -202,7 +206,7 @@ footer {
     justify-content: center;
     padding: 10px;
     margin-bottom: 40px;
-    
+
     .contenedor-menu-footer {
         display: flex;
         flex-direction: column;
@@ -214,6 +218,7 @@ footer {
             text-decoration: none;
         }
     }
+
     .contenedor-redes {
         display: flex;
         flex-direction: row;
@@ -263,13 +268,68 @@ p {
         }
     }
 
-    .img-sobre-mi-2 {
-        display: none;
+
+    .contenedor-sobre-mi {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .contenedor-img-sobre-mi {
+            background-color: #C7D7CD;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .img-sobre-mi-1 {
+                width: 100%;
+            }
+
+            .img-sobre-mi-2 {
+                display: none;
+
+            }
+        }
+
+        .contenedor-parrafo-sobre-mi {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+
+        }
+    }
+
+    .contenedor-testimoniales {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            width: 60%;
+        }
+
+
+    }
+
+    .contenedor-contacto {
+       
+        p {
+            width: 60%;
+            
+        }
+        button {
+            width: 10%;
+    
+        }
+
     }
 
     /*Paginas*/
     .navbar .logo-h {
         height: 80px;
     }
+
 
 }
