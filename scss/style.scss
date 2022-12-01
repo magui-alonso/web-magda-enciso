@@ -6,7 +6,7 @@ $verde-1: #1C4C56;
 $verde-2: #2D7C8E;
 $verde-3: #3B989E;
 $verde-4: #8EBDA0;
-$gris: #C7D7CD;
+$verde-5: #C7D7CD;
 $montserrat: 'Montserrat',
 sans-serif;
 
@@ -22,12 +22,16 @@ html {
 
 body {
     background-color: #fafafa;
+    font-family: $montserrat;
 
+    p {
+        font-size: 14px;
+    }
 }
 
 .navbar {
     padding: 10px 20px;
-   
+
     .logo-principal {
         width: 50px;
     }
@@ -38,10 +42,10 @@ body {
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
-        margin: 5px 0 ;
+        margin: 5px 0;
         padding: 5px;
         border-bottom: solid 2px transparent;
-        
+
         &:hover {
             color: $verde-4;
         }
@@ -51,47 +55,225 @@ body {
         border-bottom: solid 2px $verde-2;
         font-weight: 500;
     }
-    
+
 }
-.contenedor-imagen {
-    height: 500px;
- }
- .img-index {
 
-     width: 100%;
-     max-width: 1366px;
-  }
+.img-index {
+
+    width: 100%;
+    max-width: 1366px;
+}
+
+.linea-vertical {
+    height: 45px;
+    width: 2px;
+    margin: auto;
+    background-color: $verde-1;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.contenedor-parrafo-index {
+    width: 100%;
+
+    p {
+        color: $verde-1;
+        margin: auto;
+        width: 80%;
+        padding: 20px 0 30px 0;
+        font-weight: 400;
+    }
+}
+
+.contenedor-sobre-mi {
+
+    width: 100%;
+    background-color: $verde-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 
-  /*Paginas*/
+    .contenedor-img-sobre-mi {
+        background-color: #C7D7CD;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
-  .navbar .logo-h {
+        .img-sobre-mi-1 {
+            background-color: green;
+            width: 50%;
+        }
+
+        .img-sobre-mi-2 {
+            background-color: blue;
+            width: 50%;
+
+        }
+    }
+
+    .parrafo-sobre-mi {
+        width: 80%;
+        color: #ffffff;
+        margin: auto;
+        padding: 20px 0 30px 0;
+
+    }
+
+    h4 {
+        color: #fff;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    hr {
+        width: 40px;
+        height: 2px;
+        color: #fff;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+.contenedor-testimoniales {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h4 {
+        color: $verde-1;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    hr {
+        width: 40px;
+        height: 2px;
+        color: $verde-1;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    p {
+        color: $verde-1;
+        margin: auto;
+        width: 80%;
+        padding: 20px 0 30px 0;
+        font-weight: 400;
+    }
+}
+
+.contenedor-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: $verde-5;
+
+    h4 {
+        color: $verde-1;
+        margin: auto;
+    }
+
+    p {
+        color: $verde-1;
+        margin: auto;
+        width: 80%;
+        padding: 20px 0 30px 0;
+        font-weight: 400;
+    }
+
+    button {
+        border-radius: 5px;
+        border: solid 1px $verde-1;
+        background-color: transparent;
+        margin: auto;
+        width: 30%;
+
+        a {
+            text-decoration: none;
+            color: $verde-1;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    
+    .contenedor-menu-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            padding: 5px;
+            color: $verde-1;
+            text-decoration: none;
+        }
+    }
+    .contenedor-redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px;
+
+        svg {
+            color: $verde-1;
+            width: 30px;
+        }
+    }
+
+    h6 {
+        margin: auto;
+        color: $verde-1;
+        font-size: 10px;
+        text-align: center;
+        font-weight: 400;
+    }
+}
+
+
+/*Paginas*/
+
+.navbar .logo-h {
     height: 50px;
-  }
+}
 
-p{
+p {
     color: blue;
 }
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
     .navbar {
         padding: 20px 50px 0 50px;
-       
+
         .logo-principal {
             width: 80px;
         }
+
         .nav-link {
-            margin: 5px 30px ;
-           
+            margin: 5px 30px;
+
             &:hover {
                 color: $verde-4;
             }
         }
     }
 
+    .img-sobre-mi-2 {
+        display: none;
+    }
 
-     /*Paginas*/
+    /*Paginas*/
     .navbar .logo-h {
         height: 80px;
-      }
-    
+    }
+
 }
