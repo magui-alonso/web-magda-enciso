@@ -10,7 +10,9 @@ $verde-5: #C7D7CD;
 $montserrat: 'Montserrat',
 sans-serif;
 
-
+html {
+    box-sizing: border-box;
+}
 
 
 body {
@@ -199,6 +201,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding: 10px;
+    margin-bottom: 40px;
     
     .contenedor-menu-footer {
         display: flex;
