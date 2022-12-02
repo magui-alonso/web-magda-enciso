@@ -70,6 +70,7 @@ body {
 
 .contenedor-parrafo-index {
     width: 100%;
+    margin: auto;
 
     p {
         color: $verde-1;
@@ -217,6 +218,11 @@ footer {
             color: $verde-1;
             text-decoration: none;
         }
+
+        .active {
+            border-bottom: solid 2px $verde-2;
+            font-weight: 500;
+        }
     }
 
     .contenedor-redes {
@@ -228,8 +234,44 @@ footer {
         svg {
             color: $verde-1;
             width: 30px;
+
+
         }
+
+        .facebook {
+            &:hover {
+                padding: 1px;
+                border-radius: 48%;
+                color: #fff;
+                background-color: #3b5998;
+                
+            }
+        }
+
+        .instagram {
+            &:hover {
+                padding: 1px;
+                border-radius: 48%;
+                color: #fff;
+                background-image: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)
+            }
+        }
+
+        .linkedin {
+            &:hover {
+                padding: 1px;
+                border-radius: 48%;
+                color: #fff;
+                background-color: #0e76a8;
+                
+            }
+        }
+
     }
+}
+
+.contenedor-terminos {
+    margin-bottom: 40px;
 
     h6 {
         margin: auto;
@@ -237,6 +279,7 @@ footer {
         font-size: 10px;
         text-align: center;
         font-weight: 400;
+
     }
 }
 
@@ -247,11 +290,17 @@ footer {
     height: 50px;
 }
 
-p {
-    color: blue;
-}
+
 
 @media (min-width: 768px) {
+
+    body {
+
+        p {
+            font-size: 16px;
+        }
+    }
+
     .navbar {
         padding: 20px 50px 0 50px;
 
@@ -268,6 +317,14 @@ p {
         }
     }
 
+    .contenedor-parrafo-index {
+        width: 90%;
+
+        p {
+            font-size: 16px;
+        }
+
+    }
 
     .contenedor-sobre-mi {
         display: flex;
@@ -297,6 +354,9 @@ p {
             align-items: center;
             width: 50%;
 
+            p {
+                font-size: 14px;
+            }
         }
     }
 
@@ -314,22 +374,65 @@ p {
     }
 
     .contenedor-contacto {
-       
+
         p {
             width: 60%;
-            
+
         }
+
         button {
             width: 10%;
-    
+
         }
 
     }
+
+    footer {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        padding: 0;
+        margin-top: 80px;
+        margin-bottom: 60px;
+
+        .contenedor-menu-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            a {
+                margin-right: 15px;
+            }
+        }
+
+        .contenedor-redes {
+            width: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0px;
+
+            svg {
+                width: 40px;
+            }
+
+        }
+    }
+
+    .contenedor-terminos {
+        h6 {
+            font-size: 14px;
+            padding-bottom: 5px;
+
+        }
+    }
+
 
     /*Paginas*/
     .navbar .logo-h {
         height: 80px;
     }
-
 
 }
