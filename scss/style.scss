@@ -163,31 +163,46 @@ body {
         padding: 20px 0 30px 0;
         font-weight: 400;
     }
-    
+
     .carousel {
         width: 100%;
+
+        .carousel-indicators [data-bs-target] {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $verde-4;
+            margin-bottom: 10px;
+        }
+
         .fondo-carousel {
             background-color: $fondo;
             height: 450px;
         }
-        
+
         .img-persona {
             width: 120px;
             border-radius: 50%;
             border: $verde-4 4px solid;
         }
+
         h5 {
             color: $verde-1;
             font-weight: bold;
             margin-top: 15px;
         }
+
         h6 {
             color: $verde-4;
         }
 
-        .comillas {
-            font-size: 24px;
-            font-weight: bold;
+        p {
+            line-height: 24px;
+
+            .comillas {
+                font-size: 24px;
+                font-weight: bold;
+            }
         }
     }
 }
@@ -211,11 +226,12 @@ body {
         width: 80%;
         padding: 20px 0 30px 0;
         font-weight: 400;
+
     }
 
     button {
-        border-radius: 5px;
-        border: solid 1px $verde-1;
+        border-radius: 3px;
+        border: solid 2px $verde-1;
         background-color: transparent;
         margin: auto;
         width: 30%;
@@ -317,6 +333,61 @@ footer {
     height: 50px;
 }
 
+.encabezado-terapias {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+
+    h1 {
+        color: $verde-1;
+        margin: auto;
+        width: 80%;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    p {
+        color: $verde-1;
+        margin: auto;
+        width: 80%;
+        padding: 20px 0 20px 0;
+        font-weight: 400;
+    }
+    hr {
+        width: 40px;
+        height: 2px;
+        color: $verde-1;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+}
+
+.contenedor-cards-terapias {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cards-terapias {
+        width: 70%;
+        margin-bottom: 40px;
+        background-color: $blanco;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        img {
+            width: 100%;
+        }
+        h5 {
+            text-align: center;
+            margin-top: 15px;
+
+        }
+        p {
+            padding: 10px 20px;
+        }
+    }
+}
+
 
 
 @media (min-width: 768px) {
@@ -396,14 +467,16 @@ footer {
         p {
             width: 60%;
         }
+
         .carousel {
             width: 100%;
+
             .fondo-carousel {
                 background-color: $fondo;
-                height: 400px;
+                height: 380px;
             }
-           
-            
+
+
         }
 
     }
@@ -468,6 +541,27 @@ footer {
     /*Paginas*/
     .navbar .logo-h {
         height: 80px;
+    }
+    .encabezado-terapias {
+        width: 60%;
+    
+    }
+    
+    .contenedor-cards-terapias {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+    
+        .cards-terapias {
+            width: 30%;
+    
+            p {
+                padding: 10px 20px;
+                
+            }
+        }
     }
 
 }

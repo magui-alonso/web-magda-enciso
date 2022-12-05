@@ -134,6 +134,13 @@ body p {
 .contenedor-testimoniales .carousel {
   width: 100%;
 }
+.contenedor-testimoniales .carousel .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #8EBDA0;
+  margin-bottom: 10px;
+}
 .contenedor-testimoniales .carousel .fondo-carousel {
   background-color: #fafafa;
   height: 450px;
@@ -151,7 +158,10 @@ body p {
 .contenedor-testimoniales .carousel h6 {
   color: #8EBDA0;
 }
-.contenedor-testimoniales .carousel .comillas {
+.contenedor-testimoniales .carousel p {
+  line-height: 24px;
+}
+.contenedor-testimoniales .carousel p .comillas {
   font-size: 24px;
   font-weight: bold;
 }
@@ -176,8 +186,8 @@ body p {
   font-weight: 400;
 }
 .contenedor-contacto button {
-  border-radius: 5px;
-  border: solid 1px #1C4C56;
+  border-radius: 3px;
+  border: solid 2px #1C4C56;
   background-color: transparent;
   margin: auto;
   width: 30%;
@@ -254,6 +264,56 @@ footer .contenedor-redes .linkedin:hover {
   height: 50px;
 }
 
+.encabezado-terapias {
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+}
+.encabezado-terapias h1 {
+  color: #1C4C56;
+  margin: auto;
+  width: 80%;
+  font-size: 24px;
+  text-align: center;
+}
+.encabezado-terapias p {
+  color: #1C4C56;
+  margin: auto;
+  width: 80%;
+  padding: 20px 0 20px 0;
+  font-weight: 400;
+}
+.encabezado-terapias hr {
+  width: 40px;
+  height: 2px;
+  color: #1C4C56;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.contenedor-cards-terapias {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor-cards-terapias .cards-terapias {
+  width: 70%;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contenedor-cards-terapias .cards-terapias img {
+  width: 100%;
+}
+.contenedor-cards-terapias .cards-terapias h5 {
+  text-align: center;
+  margin-top: 15px;
+}
+.contenedor-cards-terapias .cards-terapias p {
+  padding: 10px 20px;
+}
+
 @media (min-width: 768px) {
   body p {
     font-size: 16px;
@@ -317,7 +377,7 @@ footer .contenedor-redes .linkedin:hover {
   }
   .contenedor-testimoniales .carousel .fondo-carousel {
     background-color: #fafafa;
-    height: 400px;
+    height: 380px;
   }
   .contenedor-contacto p {
     width: 60%;
@@ -360,5 +420,21 @@ footer .contenedor-redes .linkedin:hover {
   /*Paginas*/
   .navbar .logo-h {
     height: 80px;
+  }
+  .encabezado-terapias {
+    width: 60%;
+  }
+  .contenedor-cards-terapias {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .contenedor-cards-terapias .cards-terapias {
+    width: 30%;
+  }
+  .contenedor-cards-terapias .cards-terapias p {
+    padding: 10px 20px;
   }
 }/*# sourceMappingURL=style.css.map */
