@@ -163,6 +163,33 @@ body {
         padding: 20px 0 30px 0;
         font-weight: 400;
     }
+    
+    .carousel {
+        width: 100%;
+        .fondo-carousel {
+            background-color: $fondo;
+            height: 450px;
+        }
+        
+        .img-persona {
+            width: 120px;
+            border-radius: 50%;
+            border: $verde-4 4px solid;
+        }
+        h5 {
+            color: $verde-1;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        h6 {
+            color: $verde-4;
+        }
+
+        .comillas {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
 }
 
 .contenedor-contacto {
@@ -244,7 +271,7 @@ footer {
                 border-radius: 48%;
                 color: #fff;
                 background-color: #3b5998;
-                
+
             }
         }
 
@@ -263,7 +290,7 @@ footer {
                 border-radius: 48%;
                 color: #fff;
                 background-color: #0e76a8;
-                
+
             }
         }
 
@@ -369,7 +396,15 @@ footer {
         p {
             width: 60%;
         }
-
+        .carousel {
+            width: 100%;
+            .fondo-carousel {
+                background-color: $fondo;
+                height: 400px;
+            }
+           
+            
+        }
 
     }
 
