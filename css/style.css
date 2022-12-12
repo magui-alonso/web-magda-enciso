@@ -278,7 +278,7 @@ footer .contenedor-redes .linkedin:hover {
 
 /*------Secciones-----*/
 .navbar .logo-h {
-  height: 50px;
+  height: 40px;
 }
 
 .contenedor-encabezado-secciones {
@@ -299,17 +299,20 @@ footer .contenedor-redes .linkedin:hover {
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: 400;
+  text-align: center;
 }
 
 /*------Terapias-----*/
 .contenedor-cards-terapias {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 250px;
+  justify-content: center;
+  background-color: #d92e7f;
 }
 .contenedor-cards-terapias .cards-terapias {
-  width: 70%;
+  width: 100%;
+  margin: auto;
   margin-bottom: 40px;
   background-color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -326,7 +329,10 @@ footer .contenedor-redes .linkedin:hover {
   margin-top: 15px;
 }
 .contenedor-cards-terapias .cards-terapias p {
-  padding: 10px 20px;
+  padding: 10px 0;
+  width: 90%;
+  text-align: left;
+  margin: auto;
 }
 
 /*------Programas-----*/
@@ -468,7 +474,7 @@ footer .contenedor-redes .linkedin:hover {
   }
   /*Secciones*/
   .navbar .logo-h {
-    height: 80px;
+    height: 60px;
   }
   .contenedor-encabezado-secciones {
     width: 60%;
@@ -476,19 +482,25 @@ footer .contenedor-redes .linkedin:hover {
   .contenedor-encabezado-secciones h1 {
     font-size: 28px;
   }
+  .contenedor-encabezado-secciones p {
+    text-align: left;
+  }
   /*------Terapias-----*/
   .contenedor-cards-terapias {
     width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: auto;
   }
   .contenedor-cards-terapias .cards-terapias {
     width: 30%;
+    min-width: 250px;
+    max-width: 280px;
   }
   .contenedor-cards-terapias .cards-terapias p {
-    padding: 10px 20px;
+    padding: 10px 0;
   }
   /*------Programas-----*/
   /*------Contacto-----*/
