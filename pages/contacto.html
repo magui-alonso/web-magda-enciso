@@ -45,7 +45,32 @@
         </div>
     </nav>
     <main>
-        <p>CONTACTO</p>
+        <section class="contenedor-encabezado-secciones">
+            <h1>Contacto</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore enim obcaecati quia nihil corrupti
+                doloribus quidem.</p>
+           <div class="linea-oscura-secciones"></div>
+        </section>
+
+        <section class="contenedor-seccion-contacto">
+            <form action="contacto.php" method="post" >
+                <div class="mb-3">
+                    <label class="form-label" for="nombre-apellido">Nombre y Apellido</label>
+                    <input class="form-control" type="text" name="nombre-apellido" required>
+                  </div>
+                <div class="mb-3">
+                  <label class="form-label" for="emial">Email</label>
+                  <input id="ins" class="form-control" type="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="message">Deja tu consulta</label>
+                  <textarea class="form-control" name="message" rows="3" required></textarea>
+                    
+                </div>
+                
+                <button class="boton-formulario" type="submit" value="Enviar">Enviar</button>
+              </form>
+        </section>
     </main>
 
     <footer>

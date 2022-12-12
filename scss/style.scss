@@ -24,6 +24,32 @@ body {
     }
 }
 
+.linea-oscura-index {
+    width: 50px;
+    height: 2px;
+    border: $verde-1 solid 2px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.linea-oscura-secciones {
+    width: 50px;
+    height: 2px;
+    border: $verde-1 solid 2px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.linea-clara {
+    width: 50px;
+    height: 2px;
+    border: $verde-4 solid 2px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
 .navbar {
     padding: 10px 20px;
 
@@ -54,7 +80,6 @@ body {
 }
 
 .img-index {
-
     width: 100%;
     max-width: 1366px;
 }
@@ -81,7 +106,7 @@ body {
     }
 }
 
-.contenedor-sobre-mi {
+.contenedor-biografia {
 
     width: 100%;
     background-color: $verde-1;
@@ -89,36 +114,27 @@ body {
     flex-direction: column;
     justify-content: center;
 
-
-    .contenedor-img-sobre-mi {
+    .contenedor-biografia-img {
         background-color: #C7D7CD;
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
 
-        .img-sobre-mi-1 {
+        .img-biografia-1 {
             width: 50%;
         }
 
-        .img-sobre-mi-2 {
+        .img-biografia-2 {
             width: 50%;
-
         }
     }
 
-    .contenedor-parrafo-sobre-mi {
+    .contenedor-biografia-textos {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-
-        .parrafo-sobre-mi {
-            width: 80%;
-            color: #ffffff;
-            margin: auto;
-            padding: 20px 0 30px 0;
-        }
 
         h4 {
             color: #fff;
@@ -126,12 +142,11 @@ body {
             margin-top: 30px;
         }
 
-        hr {
-            width: 40px;
-            height: 2px;
-            color: #fff;
+        p {
+            width: 80%;
+            color: #ffffff;
             margin: auto;
-            margin-top: 10px;
+            padding: 20px 0 30px 0;
         }
     }
 }
@@ -146,14 +161,7 @@ body {
         color: $verde-1;
         margin: auto;
         margin-top: 30px;
-    }
-
-    hr {
-        width: 40px;
-        height: 2px;
-        color: $verde-1;
-        margin: auto;
-        margin-top: 10px;
+        font-weight: 600;
     }
 
     p {
@@ -188,7 +196,7 @@ body {
 
         h5 {
             color: $verde-1;
-            font-weight: bold;
+            font-weight: 500;
             margin-top: 15px;
         }
 
@@ -218,6 +226,7 @@ body {
     h4 {
         color: $verde-1;
         margin: auto;
+        font-weight: 600;
     }
 
     p {
@@ -229,15 +238,19 @@ body {
 
     }
 
-    button {
+    .boton {
         border-radius: 3px;
         border: solid 2px $verde-1;
-        background-color: transparent;
+        background-color: $verde-1;
+        color: $blanco;
         margin: auto;
+        padding: 5px;
         width: 30%;
+        text-align: center;
+        text-decoration: none;
 
-        a {
-            text-decoration: none;
+        &:hover {
+            background-color: transparent;
             color: $verde-1;
         }
     }
@@ -277,8 +290,6 @@ footer {
         svg {
             color: $verde-1;
             width: 30px;
-
-
         }
 
         .facebook {
@@ -287,7 +298,6 @@ footer {
                 border-radius: 48%;
                 color: #fff;
                 background-color: #3b5998;
-
             }
         }
 
@@ -306,7 +316,6 @@ footer {
                 border-radius: 48%;
                 color: #fff;
                 background-color: #0e76a8;
-
             }
         }
 
@@ -326,41 +335,36 @@ footer {
     }
 }
 
-
-/*Paginas*/
+/*------Secciones-----*/
 
 .navbar .logo-h {
     height: 50px;
 }
 
-.encabezado-terapias {
-    width: 100%;
+.contenedor-encabezado-secciones {
+    width: 80%;
     margin: auto;
     margin-top: 50px;
 
     h1 {
         color: $verde-1;
         margin: auto;
-        width: 80%;
         font-size: 24px;
+        font-weight: 600;
         text-align: center;
     }
 
     p {
         color: $verde-1;
         margin: auto;
-        width: 80%;
-        padding: 20px 0 20px 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
         font-weight: 400;
     }
-    hr {
-        width: 40px;
-        height: 2px;
-        color: $verde-1;
-        margin: auto;
-        margin-bottom: 40px;
-    }
+
 }
+
+/*------Terapias-----*/
 
 .contenedor-cards-terapias {
     width: 100%;
@@ -375,25 +379,70 @@ footer {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
         img {
-            width: 100%;
-        }
+                width: 100%;
+
+                &:hover {
+                    opacity: 10%;
+                transition: all 2s ease-in-out;
+            }
+            }
+
         h5 {
             text-align: center;
             margin-top: 15px;
-
         }
+
         p {
             padding: 10px 20px;
         }
+
     }
 }
 
+/*------Programas-----*/
+
+/*------Contacto-----*/
+
+.contenedor-seccion-contacto {
+    width: 100%;
+
+    background-color: $verde-5;
+
+    form {
+        width: 50%;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        button {
+            border-radius: 3px;
+            border: solid 2px $verde-1;
+            background-color: $verde-1;
+            color: $blanco;
+            margin: auto;
+            padding: 5px;
+            width: 20%;
+            text-align: center;
+            text-decoration: none;
+
+            &:hover {
+                background-color: transparent;
+                color: $verde-1;
+            }
+        }
+
+        .form-control:focus {
+            border-color: #2D7C8E;
+            box-shadow: 0 0 0 0.2rem rgba(28, 76, 86, 0.25);
+            
+        } 
+    }
+}
 
 
 @media (min-width: 768px) {
 
     body {
-
         p {
             font-size: 16px;
         }
@@ -424,35 +473,37 @@ footer {
 
     }
 
-    .contenedor-sobre-mi {
+    .contenedor-biografia {
         display: flex;
         flex-direction: row;
         justify-content: center;
 
-        .contenedor-img-sobre-mi {
+        .contenedor-biografia-img {
             background-color: #C7D7CD;
             width: 50%;
             display: flex;
             flex-direction: row;
             justify-content: center;
 
-            .img-sobre-mi-1 {
+            .img-biografia-1 {
                 width: 100%;
             }
 
-            .img-sobre-mi-2 {
+            .img-biografia-2 {
                 display: none;
 
             }
         }
 
-        .contenedor-parrafo-sobre-mi {
+        .contenedor-biografia-textos {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 50%;
 
             p {
+                width: 80%;
+                margin-bottom: 40px;
                 font-size: 14px;
             }
         }
@@ -475,8 +526,6 @@ footer {
                 background-color: $fondo;
                 height: 380px;
             }
-
-
         }
 
     }
@@ -485,12 +534,10 @@ footer {
 
         p {
             width: 60%;
-
         }
 
-        button {
+        .boton {
             width: 10%;
-
         }
 
     }
@@ -537,31 +584,199 @@ footer {
         }
     }
 
+    /*Secciones*/
 
-    /*Paginas*/
     .navbar .logo-h {
         height: 80px;
     }
-    .encabezado-terapias {
+
+    .contenedor-encabezado-secciones {
         width: 60%;
-    
+
+        h1 {
+            font-size: 28px;
+        }
+
     }
-    
+
+    /*------Terapias-----*/
+
     .contenedor-cards-terapias {
         width: 80%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin: auto;
-    
+
         .cards-terapias {
             width: 30%;
-    
+
             p {
                 padding: 10px 20px;
-                
+
             }
         }
     }
 
+    /*------Programas-----*/
+
+    /*------Contacto-----*/
+
+}
+
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+    width:90%;
+	list-style: none;
+	text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: center;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 320px;
+	max-height: 360px;
+	width: 30%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/***** Sarah *****/
+/*---------------*/
+
+figure.effect-sarah {
+	background: #42b078;
+}
+
+figure.effect-sarah img {
+	max-width: none;
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-sarah:hover img {
+	opacity: 0.4;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah figcaption {
+	text-align: left;
+}
+
+figure.effect-sarah h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+
+figure.effect-sarah h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect-sarah:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect-sarah:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
