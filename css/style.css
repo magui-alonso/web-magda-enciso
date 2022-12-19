@@ -93,7 +93,6 @@ body p {
   justify-content: center;
 }
 .contenedor-biografia .contenedor-biografia-img {
-  background-color: #C7D7CD;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -117,7 +116,7 @@ body p {
 }
 .contenedor-biografia .contenedor-biografia-textos p {
   width: 80%;
-  color: #ffffff;
+  color: #fff;
   margin: auto;
   padding: 20px 0 30px 0;
 }
@@ -307,7 +306,11 @@ footer .contenedor-redes .linkedin:hover {
   grid-template-columns: 250px;
   justify-content: center;
 }
-.contenedor-cards-terapias .cards-terapias {
+.contenedor-cards-terapias a {
+  text-decoration: none;
+  color: #1C4C56;
+}
+.contenedor-cards-terapias a .cards-terapias {
   width: 100%;
   margin: auto;
   margin-bottom: 40px;
@@ -315,25 +318,29 @@ footer .contenedor-redes .linkedin:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
-.contenedor-cards-terapias .cards-terapias .imagen {
+.contenedor-cards-terapias a .cards-terapias .imagen {
   overflow: hidden;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #2D7C8E;
 }
-.contenedor-cards-terapias .cards-terapias:hover img {
+.contenedor-cards-terapias a .cards-terapias:hover img {
   opacity: 0.7;
   transform: scale(1.1);
 }
-.contenedor-cards-terapias .cards-terapias img {
+.contenedor-cards-terapias a .cards-terapias img {
   width: 100%;
   transition: opacity 0.55s, transform 0.55s;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
-.contenedor-cards-terapias .cards-terapias h6 {
+.contenedor-cards-terapias a .cards-terapias h6 {
   text-align: center;
-  margin-top: 15px;
   font-weight: 600;
+  background-color: #C7D7CD;
+  padding: 10px;
 }
-.contenedor-cards-terapias .cards-terapias p {
+.contenedor-cards-terapias a .cards-terapias p {
   padding: 10px 0;
   width: 90%;
   text-align: left;
@@ -341,6 +348,151 @@ footer .contenedor-redes .linkedin:hover {
 }
 
 /*------Programas-----*/
+.grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  width: 90%;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Common style */
+.grid figure {
+  position: relative;
+  float: center;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-height: 360px;
+  width: 30%;
+  background: #2D7C8E;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/***** Sarah *****/
+/*---------------*/
+figure.effect-sarah {
+  background: #2D7C8E;
+}
+
+figure.effect-sarah img {
+  max-width: none;
+  width: calc(100% + 20px);
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect-sarah:hover img {
+  opacity: 0.4;
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect-sarah figcaption {
+  text-align: left;
+}
+
+figure.effect-sarah h2 {
+  position: relative;
+  overflow: hidden;
+  padding: 0.5em 0;
+}
+
+figure.effect-sarah h2::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  content: "";
+  transition: transform 0.35s;
+  transform: translate3d(-100%, 0, 0);
+}
+
+figure.effect-sarah:hover h2::after {
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect-sarah p {
+  padding: 1em 0;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(100%, 0, 0);
+}
+
+figure.effect-sarah:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 /*------Contacto-----*/
 .contenedor-seccion-contacto {
   width: 100%;
@@ -370,6 +522,28 @@ footer .contenedor-redes .linkedin:hover {
 .contenedor-seccion-contacto form .form-control:focus {
   border-color: #2D7C8E;
   box-shadow: 0 0 0 0.2rem rgba(28, 76, 86, 0.25);
+}
+
+/*------Secciones Terapias-----*/
+.contenedor-contenido-seccion {
+  width: 70%;
+  margin: auto;
+}
+.contenedor-contenido-seccion p {
+  color: #1C4C56;
+}
+.contenedor-contenido-seccion p span {
+  font-weight: bold;
+}
+
+.contenedor-img-secciones-terapias {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.contenedor-img-secciones-terapias img {
+  width: 25%;
 }
 
 @media (min-width: 768px) {
@@ -506,148 +680,4 @@ footer .contenedor-redes .linkedin:hover {
   }
   /*------Programas-----*/
   /*------Contacto-----*/
-}
-.grid {
-  position: relative;
-  margin: 0 auto;
-  padding: 1em 0 4em;
-  width: 90%;
-  list-style: none;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* Common style */
-.grid figure {
-  position: relative;
-  float: center;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 320px;
-  max-height: 360px;
-  width: 30%;
-  background: #3085a3;
-  text-align: center;
-  cursor: pointer;
-}
-
-.grid figure img {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  max-width: 100%;
-  opacity: 0.8;
-}
-
-.grid figure figcaption {
-  padding: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-  pointer-events: none;
-}
-
-.grid figure figcaption,
-.grid figure figcaption > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.grid figure figcaption > a {
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
-}
-
-.grid figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-}
-
-.grid figure h2 span {
-  font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-  margin: 0;
-}
-
-.grid figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%;
-}
-
-/***** Sarah *****/
-/*---------------*/
-figure.effect-sarah {
-  background: #42b078;
-}
-
-figure.effect-sarah img {
-  max-width: none;
-  width: calc(100% + 20px);
-  transition: opacity 0.35s, transform 0.35s;
-  transform: translate3d(-10px, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-figure.effect-sarah:hover img {
-  opacity: 0.4;
-  transform: translate3d(0, 0, 0);
-}
-
-figure.effect-sarah figcaption {
-  text-align: left;
-}
-
-figure.effect-sarah h2 {
-  position: relative;
-  overflow: hidden;
-  padding: 0.5em 0;
-}
-
-figure.effect-sarah h2::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: #fff;
-  content: "";
-  transition: transform 0.35s;
-  transform: translate3d(-100%, 0, 0);
-}
-
-figure.effect-sarah:hover h2::after {
-  transform: translate3d(0, 0, 0);
-}
-
-figure.effect-sarah p {
-  padding: 1em 0;
-  opacity: 0;
-  transition: opacity 0.35s, transform 0.35s;
-  transform: translate3d(100%, 0, 0);
-}
-
-figure.effect-sarah:hover p {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
 }/*# sourceMappingURL=style.css.map */
