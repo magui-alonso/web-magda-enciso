@@ -60,9 +60,8 @@ body p {
   font-weight: 500;
 }
 
-.img-index {
+.img-header-index {
   width: 100%;
-  max-width: 1366px;
 }
 
 .linea-vertical {
@@ -107,15 +106,14 @@ body p {
   width: 50%;
 }
 .contenedor-biografia .contenedor-biografia-textos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
 }
 .contenedor-biografia .contenedor-biografia-textos h4 {
+  width: 80%;
   color: #fff;
   margin: auto;
   margin-top: 30px;
+  text-align: center;
 }
 .contenedor-biografia .contenedor-biografia-textos p {
   width: 80%;
@@ -415,15 +413,12 @@ footer .contenedor-redes .linkedin:hover {
     display: none;
   }
   .contenedor-biografia .contenedor-biografia-textos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 50%;
   }
   .contenedor-biografia .contenedor-biografia-textos p {
     width: 80%;
-    margin-bottom: 40px;
     font-size: 14px;
+    margin-top: 20px;
   }
   .contenedor-testimoniales {
     width: 100%;

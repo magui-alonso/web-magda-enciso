@@ -79,9 +79,11 @@ body {
 
 }
 
-.img-index {
+
+
+.img-header-index {
     width: 100%;
-    max-width: 1366px;
+    
 }
 
 .linea-vertical {
@@ -107,7 +109,6 @@ body {
 }
 
 .contenedor-biografia {
-
     width: 100%;
     background-color: $verde-1;
     display: flex;
@@ -131,15 +132,14 @@ body {
     }
 
     .contenedor-biografia-textos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 100%;
 
         h4 {
+            width:80%;
             color: #fff;
             margin: auto;
             margin-top: 30px;
+            text-align: center;
         }
 
         p {
@@ -517,15 +517,13 @@ footer {
         }
 
         .contenedor-biografia-textos {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+           
             width: 50%;
 
             p {
                 width: 80%;
-                margin-bottom: 40px;
                 font-size: 14px;
+                margin-top: 20px;
             }
         }
     }
