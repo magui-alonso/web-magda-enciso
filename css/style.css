@@ -10,6 +10,9 @@ body {
 body p {
   font-size: 14px;
 }
+body ul li {
+  font-size: 14px;
+}
 
 .linea-oscura-index {
   width: 50px;
@@ -538,8 +541,7 @@ figure.effect-sarah:hover p {
   font-weight: bold;
 }
 .contenedor-contenido-seccion ul li {
-  color: red;
-  font-size: 15px;
+  color: #1C4C56;
   font-family: "Montserrat", sans-serif;
 }
 
