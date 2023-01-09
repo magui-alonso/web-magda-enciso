@@ -22,9 +22,7 @@ body {
     p {
         font-size: 14px;
     }
-    ul li {
-        font-size: 14px;
-    }
+    
 }
 
 .linea-oscura-index {
@@ -606,8 +604,7 @@ figure.effect-sarah:hover p {
             background-color: $verde-1;
             color: $blanco;
             margin: auto;
-            padding: 5px;
-            width: 20%;
+            padding: 5px 10px;
             text-align: center;
             text-decoration: none;
 
@@ -638,13 +635,6 @@ figure.effect-sarah:hover p {
             font-weight: bold;
         }
     }
-
-    ul li {
-        color: $verde-1;
-        font-family: $montserrat;
-        font-size: 15px;
-    }
-
 }
 
 .contenedor-img-secciones-terapias {
