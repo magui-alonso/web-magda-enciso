@@ -231,6 +231,7 @@ body {
         width: 80%;
         padding: 20px 0 30px 0;
         font-weight: 400;
+        text-align: center;
 
     }
 
@@ -381,6 +382,7 @@ footer {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 5px;
 
+
             .imagen {
                 overflow: hidden;
                 border-top-left-radius: 5px;
@@ -413,7 +415,7 @@ footer {
                 width: 90%;
                 text-align: left;
                 margin: auto;
-
+                height: 250px;
             }
 
         }
@@ -628,11 +630,16 @@ figure.effect-sarah:hover p {
 
     p {
         color: $verde-1;
-
-        span {
-            font-weight: bold;
-        }
     }
+
+    span {
+        font-weight: bold;
+    }
+
+    ul li {
+        color: $verde-1;
+    }
+
 }
 
 .contenedor-img-secciones-terapias {
@@ -802,10 +809,6 @@ figure.effect-sarah:hover p {
 
         h1 {
             font-size: 28px;
-        }
-
-        p {
-            text-align: left;
         }
 
     }

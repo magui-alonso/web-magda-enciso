@@ -194,6 +194,7 @@ body p {
   width: 80%;
   padding: 20px 0 30px 0;
   font-weight: 400;
+  text-align: center;
 }
 .contenedor-contacto .boton {
   border-radius: 3px;
@@ -345,6 +346,7 @@ footer .contenedor-redes .linkedin:hover {
   width: 90%;
   text-align: left;
   margin: auto;
+  height: 250px;
 }
 
 /*------Programas-----*/
@@ -532,8 +534,11 @@ figure.effect-sarah:hover p {
 .contenedor-contenido-seccion p {
   color: #1C4C56;
 }
-.contenedor-contenido-seccion p span {
+.contenedor-contenido-seccion span {
   font-weight: bold;
+}
+.contenedor-contenido-seccion ul li {
+  color: #1C4C56;
 }
 
 .contenedor-img-secciones-terapias {
@@ -657,9 +662,6 @@ figure.effect-sarah:hover p {
   }
   .contenedor-encabezado-secciones h1 {
     font-size: 28px;
-  }
-  .contenedor-encabezado-secciones p {
-    text-align: left;
   }
   /*------Terapias-----*/
   .contenedor-cards-terapias {
