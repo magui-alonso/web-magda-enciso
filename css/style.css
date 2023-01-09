@@ -539,6 +539,8 @@ figure.effect-sarah:hover p {
 }
 .contenedor-contenido-seccion ul li {
   color: #1C4C56;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .contenedor-img-secciones-terapias {
