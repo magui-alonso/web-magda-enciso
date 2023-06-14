@@ -24,7 +24,9 @@ body {
     }
     
 }
-
+a {
+    text-decoration: none;
+}
 .linea-oscura-index {
     width: 50px;
     height: 2px;
@@ -82,6 +84,7 @@ body {
 
 .img-header-index {
     width: 100%;
+    margin-top: 150px;
 }
 
 .linea-vertical {
@@ -171,6 +174,10 @@ body {
 
     .carousel {
         width: 100%;
+        
+        .carousel-item {
+            padding-top: 20px;
+        }
 
         .carousel-indicators [data-bs-target] {
             width: 10px;
@@ -342,7 +349,7 @@ footer {
 .contenedor-encabezado-secciones {
     width: 80%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 150px;
 
     h1 {
         color: $verde-1;
@@ -359,6 +366,30 @@ footer {
         padding-bottom: 20px;
         font-weight: 400;
         text-align: center;
+    }
+
+}
+/*------Terminos y condiciones-----*/
+
+.contenedor-encabezado-termYcondiciones{
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+
+    h1 {
+        color: $verde-1;
+        margin: auto;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p {
+        color: $verde-1;
+        margin: auto;
+        padding-top: 20px;
+        font-weight: 400;
+        
     }
 
 }
@@ -589,11 +620,10 @@ figure.effect-sarah:hover p {
 
 .contenedor-seccion-contacto {
     width: 100%;
-
     background-color: $verde-5;
 
     form {
-        width: 50%;
+        width: 80%;
         margin: auto;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -684,39 +714,7 @@ figure.effect-sarah:hover p {
 
     }
 
-    .contenedor-biografia {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        .contenedor-biografia-img {
-            background-color: #C7D7CD;
-            width: 50%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-            .img-biografia-1 {
-                width: 100%;
-            }
-
-            .img-biografia-2 {
-                display: none;
-
-            }
-        }
-
-        .contenedor-biografia-textos {
-
-            width: 50%;
-
-            p {
-                width: 80%;
-                font-size: 14px;
-                margin-top: 20px;
-            }
-        }
-    }
+   
 
     .contenedor-testimoniales {
         width: 100%;
@@ -746,7 +744,7 @@ figure.effect-sarah:hover p {
         }
 
         .boton {
-            width: 10%;
+            width: 15%;
         }
 
     }
@@ -833,5 +831,46 @@ figure.effect-sarah:hover p {
     /*------Programas-----*/
 
     /*------Contacto-----*/
+    .contenedor-seccion-contacto {
+        form {
+            width: 50%;
+           
+        }
+    }
 
+}
+@media (min-width: 1279px) {
+    .contenedor-biografia {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .contenedor-biografia-img {
+            background-color: #C7D7CD;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .img-biografia-1 {
+                width: 100%;
+            }
+
+            .img-biografia-2 {
+                display: none;
+
+            }
+        }
+
+        .contenedor-biografia-textos {
+
+            width: 50%;
+
+            p {
+                width: 80%;
+                font-size: 14px;
+                margin-top: 20px;
+            }
+        }
+    }
 }

@@ -11,6 +11,10 @@ body p {
   font-size: 14px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .linea-oscura-index {
   width: 50px;
   height: 2px;
@@ -62,6 +66,7 @@ body p {
 
 .img-header-index {
   width: 100%;
+  margin-top: 150px;
 }
 
 .linea-vertical {
@@ -142,6 +147,9 @@ body p {
 }
 .contenedor-testimoniales .carousel {
   width: 100%;
+}
+.contenedor-testimoniales .carousel .carousel-item {
+  padding-top: 20px;
 }
 .contenedor-testimoniales .carousel .carousel-indicators [data-bs-target] {
   width: 10px;
@@ -282,7 +290,7 @@ footer .contenedor-redes .linkedin:hover {
 .contenedor-encabezado-secciones {
   width: 80%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 .contenedor-encabezado-secciones h1 {
   color: #1C4C56;
@@ -298,6 +306,26 @@ footer .contenedor-redes .linkedin:hover {
   padding-bottom: 20px;
   font-weight: 400;
   text-align: center;
+}
+
+/*------Terminos y condiciones-----*/
+.contenedor-encabezado-termYcondiciones {
+  width: 90%;
+  margin: auto;
+  margin-top: 150px;
+}
+.contenedor-encabezado-termYcondiciones h1 {
+  color: #1C4C56;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.contenedor-encabezado-termYcondiciones p {
+  color: #1C4C56;
+  margin: auto;
+  padding-top: 20px;
+  font-weight: 400;
 }
 
 /*------Terapias-----*/
@@ -390,7 +418,6 @@ footer .contenedor-redes .linkedin:hover {
   color: #fff;
   text-transform: uppercase;
   font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -448,7 +475,6 @@ figure.effect-sarah img {
   width: calc(100% + 20px);
   transition: opacity 0.35s, transform 0.35s;
   transform: translate3d(-10px, 0, 0);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -501,7 +527,7 @@ figure.effect-sarah:hover p {
   background-color: #C7D7CD;
 }
 .contenedor-seccion-contacto form {
-  width: 50%;
+  width: 80%;
   margin: auto;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -569,32 +595,6 @@ figure.effect-sarah:hover p {
   .contenedor-parrafo-index p {
     font-size: 16px;
   }
-  .contenedor-biografia {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .contenedor-biografia .contenedor-biografia-img {
-    background-color: #C7D7CD;
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .contenedor-biografia .contenedor-biografia-img .img-biografia-1 {
-    width: 100%;
-  }
-  .contenedor-biografia .contenedor-biografia-img .img-biografia-2 {
-    display: none;
-  }
-  .contenedor-biografia .contenedor-biografia-textos {
-    width: 50%;
-  }
-  .contenedor-biografia .contenedor-biografia-textos p {
-    width: 80%;
-    font-size: 14px;
-    margin-top: 20px;
-  }
   .contenedor-testimoniales {
     width: 100%;
     display: flex;
@@ -615,7 +615,7 @@ figure.effect-sarah:hover p {
     width: 60%;
   }
   .contenedor-contacto .boton {
-    width: 10%;
+    width: 15%;
   }
   footer {
     width: 90%;
@@ -678,4 +678,35 @@ figure.effect-sarah:hover p {
   }
   /*------Programas-----*/
   /*------Contacto-----*/
+  .contenedor-seccion-contacto form {
+    width: 50%;
+  }
+}
+@media (min-width: 1279px) {
+  .contenedor-biografia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contenedor-biografia .contenedor-biografia-img {
+    background-color: #C7D7CD;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contenedor-biografia .contenedor-biografia-img .img-biografia-1 {
+    width: 100%;
+  }
+  .contenedor-biografia .contenedor-biografia-img .img-biografia-2 {
+    display: none;
+  }
+  .contenedor-biografia .contenedor-biografia-textos {
+    width: 50%;
+  }
+  .contenedor-biografia .contenedor-biografia-textos p {
+    width: 80%;
+    font-size: 14px;
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
