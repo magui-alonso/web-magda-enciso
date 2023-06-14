@@ -131,56 +131,73 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /*.carousel {
+      width: 100%;
+
+      .carousel-item {
+          padding-top: 20px;
+      }
+
+      .carousel-indicators [data-bs-target] {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: $verde-4;
+          margin-bottom: 10px;
+      }
+
+      .fondo-carousel {
+          background-color: $fondo;
+          height: 450px;
+      }
+
+      .img-persona {
+          width: 120px;
+          border-radius: 50%;
+          border: $verde-4 4px solid;
+      }
+
+      h5 {
+          color: $verde-1;
+          font-weight: 500;
+          margin-top: 15px;
+      }
+
+      h6 {
+          color: $verde-4;
+      }
+
+      p {
+          line-height: 24px;
+
+          .comillas {
+              font-size: 24px;
+              font-weight: bold;
+          }
+      }
+  }*/
 }
 .contenedor-testimoniales h4 {
   color: #1C4C56;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 80px;
   font-weight: 600;
 }
 .contenedor-testimoniales p {
   color: #1C4C56;
   margin: auto;
   width: 80%;
-  padding: 20px 0 30px 0;
+  padding: 20px 0 0 0;
+  font-weight: 500;
+  text-align: center;
+}
+.contenedor-testimoniales .testimoniales-nombre {
+  font-size: 14px;
+  padding-bottom: 80px;
   font-weight: 400;
 }
-.contenedor-testimoniales .carousel {
-  width: 100%;
-}
-.contenedor-testimoniales .carousel .carousel-item {
-  padding-top: 20px;
-}
-.contenedor-testimoniales .carousel .carousel-indicators [data-bs-target] {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #8EBDA0;
-  margin-bottom: 10px;
-}
-.contenedor-testimoniales .carousel .fondo-carousel {
-  background-color: #fafafa;
-  height: 450px;
-}
-.contenedor-testimoniales .carousel .img-persona {
-  width: 120px;
-  border-radius: 50%;
-  border: #8EBDA0 4px solid;
-}
-.contenedor-testimoniales .carousel h5 {
-  color: #1C4C56;
-  font-weight: 500;
-  margin-top: 15px;
-}
-.contenedor-testimoniales .carousel h6 {
+.contenedor-testimoniales .testimoniales-nombre span {
   color: #8EBDA0;
-}
-.contenedor-testimoniales .carousel p {
-  line-height: 24px;
-}
-.contenedor-testimoniales .carousel p .comillas {
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .contenedor-contacto {
@@ -378,149 +395,163 @@ footer .contenedor-redes .linkedin:hover {
 }
 
 /*------Programas-----*/
+/*
 .grid {
-  position: relative;
-  margin: 0 auto;
-  padding: 1em 0 4em;
-  width: 90%;
-  list-style: none;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    width: 90%;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* Common style */
+ ----Common style ----
+
 .grid figure {
-  position: relative;
-  float: center;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 320px;
-  max-height: 360px;
-  width: 30%;
-  background: #2D7C8E;
-  text-align: center;
-  cursor: pointer;
+    position: relative;
+    float: center;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-height: 360px;
+    width: 30%;
+    background: $verde-2;
+    text-align: center;
+    cursor: pointer;
+
 }
 
 .grid figure img {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  max-width: 100%;
-  opacity: 0.8;
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
 }
 
 .grid figure figcaption {
-  padding: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  backface-visibility: hidden;
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .grid figure figcaption::before,
 .grid figure figcaption::after {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 .grid figure figcaption,
-.grid figure figcaption > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.grid figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.grid figure figcaption > a {
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
+---- Anchor will cover the whole item by default 
+ For some effects it will show as a button -----
+
+.grid figure figcaption>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
 }
 
 .grid figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
+    word-spacing: -0.15em;
+    font-weight: 300;
 }
 
 .grid figure h2 span {
-  font-weight: 800;
+    font-weight: 800;
 }
 
 .grid figure h2,
 .grid figure p {
-  margin: 0;
+    margin: 0;
 }
 
 .grid figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%;
+    letter-spacing: 1px;
+    font-size: 68.5%;
 }
 
-/***** Sarah *****/
-/*---------------*/
+
 figure.effect-sarah {
-  background: #2D7C8E;
+    background: $verde-2;
 }
 
 figure.effect-sarah img {
-  max-width: none;
-  width: calc(100% + 20px);
-  transition: opacity 0.35s, transform 0.35s;
-  transform: translate3d(-10px, 0, 0);
-  backface-visibility: hidden;
+    max-width: none;
+    width: -webkit-calc(100% + 20px);
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 figure.effect-sarah:hover img {
-  opacity: 0.4;
-  transform: translate3d(0, 0, 0);
+    opacity: 0.4;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 figure.effect-sarah figcaption {
-  text-align: left;
+    text-align: left;
 }
 
 figure.effect-sarah h2 {
-  position: relative;
-  overflow: hidden;
-  padding: 0.5em 0;
+    position: relative;
+    overflow: hidden;
+    padding: 0.5em 0;
 }
 
 figure.effect-sarah h2::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: #fff;
-  content: "";
-  transition: transform 0.35s;
-  transform: translate3d(-100%, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
 }
 
 figure.effect-sarah:hover h2::after {
-  transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 figure.effect-sarah p {
-  padding: 1em 0;
-  opacity: 0;
-  transition: opacity 0.35s, transform 0.35s;
-  transform: translate3d(100%, 0, 0);
+    padding: 1em 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
 }
 
 figure.effect-sarah:hover p {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}*/
 /*------Contacto-----*/
 .contenedor-seccion-contacto {
   width: 100%;
@@ -532,17 +563,20 @@ figure.effect-sarah:hover p {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.contenedor-seccion-contacto form button {
+.contenedor-seccion-contacto form .boton-formulario {
+  display: flex;
+  justify-content: flex-end;
+}
+.contenedor-seccion-contacto form .boton-formulario button {
   border-radius: 3px;
   border: solid 2px #1C4C56;
   background-color: #1C4C56;
   color: #ffffff;
-  margin: auto;
-  padding: 5px 10px;
+  padding: 5px 15px;
   text-align: center;
   text-decoration: none;
 }
-.contenedor-seccion-contacto form button:hover {
+.contenedor-seccion-contacto form .boton-formulario button:hover {
   background-color: transparent;
   color: #1C4C56;
 }
@@ -561,6 +595,25 @@ figure.effect-sarah:hover p {
 }
 .contenedor-contenido-seccion p span {
   font-weight: bold;
+}
+.contenedor-contenido-seccion .contenedor-boton {
+  display: flex;
+  justify-content: center;
+}
+.contenedor-contenido-seccion .contenedor-boton .boton-terapias {
+  border-radius: 3px;
+  border: solid 2px #1C4C56;
+  background-color: transparent;
+  color: #1C4C56;
+  margin: auto;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 60px 0 20px 0;
+}
+.contenedor-contenido-seccion .contenedor-boton .boton-terapias:hover {
+  background-color: #1C4C56;
+  color: #ffffff;
 }
 
 .contenedor-img-secciones-terapias {

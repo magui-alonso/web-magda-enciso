@@ -22,11 +22,13 @@ body {
     p {
         font-size: 14px;
     }
-    
+
 }
+
 a {
     text-decoration: none;
 }
+
 .linea-oscura-index {
     width: 50px;
     height: 2px;
@@ -160,7 +162,7 @@ a {
     h4 {
         color: $verde-1;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 80px;
         font-weight: 600;
     }
 
@@ -168,13 +170,24 @@ a {
         color: $verde-1;
         margin: auto;
         width: 80%;
-        padding: 20px 0 30px 0;
-        font-weight: 400;
+        padding: 20px 0 0 0;
+        font-weight: 500;
+        text-align: center;
     }
 
-    .carousel {
+    .testimoniales-nombre {
+        font-size: 14px;
+        padding-bottom: 80px;
+        font-weight: 400;
+
+        span {
+            color: $verde-4;
+        }
+    }
+
+    /*.carousel {
         width: 100%;
-        
+
         .carousel-item {
             padding-top: 20px;
         }
@@ -216,7 +229,7 @@ a {
                 font-weight: bold;
             }
         }
-    }
+    }*/
 }
 
 .contenedor-contacto {
@@ -369,9 +382,10 @@ footer {
     }
 
 }
+
 /*------Terminos y condiciones-----*/
 
-.contenedor-encabezado-termYcondiciones{
+.contenedor-encabezado-termYcondiciones {
     width: 90%;
     margin: auto;
     margin-top: 150px;
@@ -389,7 +403,7 @@ footer {
         margin: auto;
         padding-top: 20px;
         font-weight: 400;
-        
+
     }
 
 }
@@ -457,7 +471,7 @@ footer {
 
 /*------Programas-----*/
 
-
+/*
 .grid {
     position: relative;
     margin: 0 auto;
@@ -471,7 +485,8 @@ footer {
     justify-content: center;
 }
 
-/* Common style */
+ ----Common style ----
+
 .grid figure {
     position: relative;
     float: center;
@@ -517,8 +532,9 @@ footer {
     height: 100%;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
+---- Anchor will cover the whole item by default 
+ For some effects it will show as a button -----
+
 .grid figure figcaption>a {
     z-index: 1000;
     text-indent: 200%;
@@ -546,8 +562,6 @@ footer {
     font-size: 68.5%;
 }
 
-/***** Sarah *****/
-/*---------------*/
 
 figure.effect-sarah {
     background: $verde-2;
@@ -613,7 +627,7 @@ figure.effect-sarah:hover p {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-}
+}*/
 
 
 /*------Contacto-----*/
@@ -628,21 +642,27 @@ figure.effect-sarah:hover p {
         padding-top: 30px;
         padding-bottom: 30px;
 
-        button {
-            border-radius: 3px;
-            border: solid 2px $verde-1;
-            background-color: $verde-1;
-            color: $blanco;
-            margin: auto;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
+        .boton-formulario {
+            display: flex;
+            justify-content:flex-end;
+            
+            button {
+                border-radius: 3px;
+                border: solid 2px $verde-1;
+                background-color: $verde-1;
+                color: $blanco;
+                padding: 5px 15px;
+                text-align: center;
+                text-decoration: none;
 
-            &:hover {
-                background-color: transparent;
-                color: $verde-1;
+                &:hover {
+                    background-color: transparent;
+                    color: $verde-1;
+                }
             }
         }
+
+
 
         .form-control:focus {
             border-color: #2D7C8E;
@@ -663,6 +683,28 @@ figure.effect-sarah:hover p {
 
         span {
             font-weight: bold;
+        }
+    }
+
+    .contenedor-boton {
+        display: flex;
+        justify-content: center;
+
+        .boton-terapias {
+            border-radius: 3px;
+            border: solid 2px $verde-1;
+            background-color: transparent;
+            color: $verde-1;
+            margin: auto;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 60px 0 20px 0;
+
+            &:hover {
+                background-color: $verde-1;
+                color: $blanco;
+            }
         }
     }
 }
@@ -714,7 +756,7 @@ figure.effect-sarah:hover p {
 
     }
 
-   
+
 
     .contenedor-testimoniales {
         width: 100%;
@@ -834,11 +876,12 @@ figure.effect-sarah:hover p {
     .contenedor-seccion-contacto {
         form {
             width: 50%;
-           
+
         }
     }
 
 }
+
 @media (min-width: 1279px) {
     .contenedor-biografia {
         display: flex;
