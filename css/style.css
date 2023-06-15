@@ -570,7 +570,7 @@ figure.effect-sarah:hover p {
   display: flex;
   justify-content: flex-end;
 }
-.contenedor-seccion-contacto form .boton-formulario button {
+.contenedor-seccion-contacto form .boton-formulario .boton-f {
   border-radius: 3px;
   border: solid 2px #1C4C56;
   background-color: #1C4C56;
@@ -579,7 +579,7 @@ figure.effect-sarah:hover p {
   text-align: center;
   text-decoration: none;
 }
-.contenedor-seccion-contacto form .boton-formulario button:hover {
+.contenedor-seccion-contacto form .boton-formulario .boton-f:hover {
   background-color: transparent;
   color: #1C4C56;
 }
