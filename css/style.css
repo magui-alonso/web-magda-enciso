@@ -131,73 +131,54 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*.carousel {
-      width: 100%;
-
-      .carousel-item {
-          padding-top: 20px;
-      }
-
-      .carousel-indicators [data-bs-target] {
-          width: 10px;
-          height: 10px;
-          border-radius: 50%;
-          background-color: $verde-4;
-          margin-bottom: 10px;
-      }
-
-      .fondo-carousel {
-          background-color: $fondo;
-          height: 450px;
-      }
-
-      .img-persona {
-          width: 120px;
-          border-radius: 50%;
-          border: $verde-4 4px solid;
-      }
-
-      h5 {
-          color: $verde-1;
-          font-weight: 500;
-          margin-top: 15px;
-      }
-
-      h6 {
-          color: $verde-4;
-      }
-
-      p {
-          line-height: 24px;
-
-          .comillas {
-              font-size: 24px;
-              font-weight: bold;
-          }
-      }
-  }*/
+  margin: 30px 0;
 }
 .contenedor-testimoniales h4 {
   color: #1C4C56;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 30px;
   font-weight: 600;
 }
-.contenedor-testimoniales p {
+.contenedor-testimoniales .carousel {
+  width: 100%;
+  margin-top: 20px;
+}
+.contenedor-testimoniales .carousel .carousel-inner {
+  height: 550px;
+}
+.contenedor-testimoniales .carousel .carousel-inner .carousel-item {
+  height: 550px;
+}
+.contenedor-testimoniales .carousel .carousel-inner .carousel-item p {
+  line-height: 24px;
+  height: 550px;
   color: #1C4C56;
-  margin: auto;
   width: 80%;
-  padding: 20px 0 0 0;
+  margin: auto;
   font-weight: 500;
   text-align: center;
 }
-.contenedor-testimoniales .testimoniales-nombre {
-  font-size: 14px;
-  padding-bottom: 80px;
+.contenedor-testimoniales .carousel .carousel-inner .carousel-item p .comillas {
+  font-size: 24px;
+  font-weight: bold;
+}
+.contenedor-testimoniales .carousel .carousel-inner .carousel-item p .nombre {
+  padding-top: 10px;
   font-weight: 400;
 }
-.contenedor-testimoniales .testimoniales-nombre span {
+.contenedor-testimoniales .carousel .carousel-inner .carousel-item p .profesion {
   color: #8EBDA0;
+}
+.contenedor-testimoniales .carousel .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #8EBDA0;
+  margin-bottom: 10px;
+}
+
+.contenedor-pagina-contacto {
+  height: 100%;
 }
 
 .contenedor-contacto {
@@ -648,21 +629,18 @@ figure.effect-sarah:hover p {
   .contenedor-parrafo-index p {
     font-size: 16px;
   }
-  .contenedor-testimoniales {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .contenedor-testimoniales .carousel .carousel-inner {
+    height: 400px;
   }
-  .contenedor-testimoniales p {
-    width: 60%;
+  .contenedor-testimoniales .carousel .carousel-inner .carousel-item {
+    height: 400px;
   }
-  .contenedor-testimoniales .carousel {
-    width: 100%;
+  .contenedor-testimoniales .carousel .carousel-inner .carousel-item p {
+    height: 400px;
+    width: 75%;
   }
-  .contenedor-testimoniales .carousel .fondo-carousel {
-    background-color: #fafafa;
-    height: 380px;
+  .contenedor-pagina-contacto {
+    height: 65vh;
   }
   .contenedor-contacto p {
     width: 60%;
@@ -735,6 +713,11 @@ figure.effect-sarah:hover p {
     width: 50%;
   }
 }
+@media (min-width: 1025px) {
+  .contenedor-pagina-contacto {
+    height: 100vh;
+  }
+}
 @media (min-width: 1279px) {
   .contenedor-biografia {
     display: flex;
@@ -761,5 +744,15 @@ figure.effect-sarah:hover p {
     width: 80%;
     font-size: 14px;
     margin-top: 20px;
+  }
+  .contenedor-testimoniales .carousel .carousel-inner {
+    height: 300px;
+  }
+  .contenedor-testimoniales .carousel .carousel-inner .carousel-item {
+    height: 300px;
+  }
+  .contenedor-testimoniales .carousel .carousel-inner .carousel-item p {
+    height: 300px;
+    width: 75%;
   }
 }/*# sourceMappingURL=style.css.map */

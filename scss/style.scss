@@ -158,38 +158,50 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 30px 0;
 
     h4 {
         color: $verde-1;
         margin: auto;
-        margin-top: 80px;
+        margin-top: 30px;
         font-weight: 600;
     }
 
-    p {
-        color: $verde-1;
-        margin: auto;
-        width: 80%;
-        padding: 20px 0 0 0;
-        font-weight: 500;
-        text-align: center;
-    }
-
-    .testimoniales-nombre {
-        font-size: 14px;
-        padding-bottom: 80px;
-        font-weight: 400;
-
-        span {
-            color: $verde-4;
-        }
-    }
-
-    /*.carousel {
+    .carousel {
         width: 100%;
+        margin-top: 20px;
 
-        .carousel-item {
-            padding-top: 20px;
+        .carousel-inner {
+            height: 550px;
+
+            .carousel-item {
+                height: 550px;
+
+                p {
+                    line-height: 24px;
+                    height: 550px;
+                    color: $verde-1;
+                    width: 80%;
+                    margin: auto;
+                    font-weight: 500;
+                    text-align: center;
+
+                    .comillas {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+
+                    .nombre {
+                        padding-top: 10px;
+                        font-weight: 400;
+                    }
+
+                    .profesion {
+                        color: #8EBDA0;
+                    }
+                }
+
+            }
         }
 
         .carousel-indicators [data-bs-target] {
@@ -199,37 +211,11 @@ a {
             background-color: $verde-4;
             margin-bottom: 10px;
         }
+    }
+}
 
-        .fondo-carousel {
-            background-color: $fondo;
-            height: 450px;
-        }
-
-        .img-persona {
-            width: 120px;
-            border-radius: 50%;
-            border: $verde-4 4px solid;
-        }
-
-        h5 {
-            color: $verde-1;
-            font-weight: 500;
-            margin-top: 15px;
-        }
-
-        h6 {
-            color: $verde-4;
-        }
-
-        p {
-            line-height: 24px;
-
-            .comillas {
-                font-size: 24px;
-                font-weight: bold;
-            }
-        }
-    }*/
+.contenedor-pagina-contacto {
+    height: 100%;
 }
 
 .contenedor-contacto {
@@ -644,8 +630,8 @@ figure.effect-sarah:hover p {
 
         .boton-formulario {
             display: flex;
-            justify-content:flex-end;
-            
+            justify-content: flex-end;
+
             button {
                 border-radius: 3px;
                 border: solid 2px $verde-1;
@@ -759,24 +745,24 @@ figure.effect-sarah:hover p {
 
 
     .contenedor-testimoniales {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        p {
-            width: 60%;
-        }
-
         .carousel {
-            width: 100%;
+            .carousel-inner {
+                height: 400px;
 
-            .fondo-carousel {
-                background-color: $fondo;
-                height: 380px;
+                .carousel-item {
+                    height: 400px;
+
+                    p {
+                        height: 400px;
+                        width: 75%;
+                    }
+                }
             }
         }
+    }
 
+    .contenedor-pagina-contacto {
+        height: 65vh;
     }
 
     .contenedor-contacto {
@@ -873,11 +859,20 @@ figure.effect-sarah:hover p {
     /*------Programas-----*/
 
     /*------Contacto-----*/
+
     .contenedor-seccion-contacto {
+
         form {
             width: 50%;
 
         }
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .contenedor-pagina-contacto {
+        height: 100vh;
     }
 
 }
@@ -913,6 +908,22 @@ figure.effect-sarah:hover p {
                 width: 80%;
                 font-size: 14px;
                 margin-top: 20px;
+            }
+        }
+    }
+    .contenedor-testimoniales {
+        .carousel {
+            .carousel-inner {
+                height: 300px;
+
+                .carousel-item {
+                    height: 300px;
+
+                    p {
+                        height: 300px;
+                        width: 75%;
+                    }
+                }
             }
         }
     }
