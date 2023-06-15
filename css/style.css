@@ -375,6 +375,28 @@ footer .contenedor-redes .linkedin:hover {
   height: 250px;
 }
 
+/*Pagina gracias*/
+.contenedor-pagina-gracias {
+  width: 100%;
+  margin: auto;
+  margin-top: 150px;
+}
+.contenedor-pagina-gracias h1 {
+  color: #1C4C56;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.contenedor-pagina-gracias h5 {
+  color: #1C4C56;
+  margin: auto;
+  padding: 100px 0;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+}
+
 /*------Programas-----*/
 /*
 .grid {

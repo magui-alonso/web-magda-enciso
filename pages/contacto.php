@@ -1,6 +1,6 @@
 <?php
 $remitente = $_POST['email'];
-$destinatario = 'magu1988@hotmail.com'; // en esta línea va el mail del destinatario.
+$destinatario = 'magui.alonso.g@gmail.com'; // en esta línea va el mail del destinatario.
 $asunto = 'Consulta desde Magda Enciso Web'; // acá se puede modificar el asunto del mail
 if (!$_POST){
 ?>
@@ -23,6 +23,6 @@ if (!$_POST){
 
     mail($destinatario, $asunto, $cuerpo, $headers);
     
-    include 'gracias.html'; //se debe crear un html que confirma el envío
+    include 'gracias-por-contactarte.html'; //se debe crear un html que confirma el envío
 }
 ?>
