@@ -1,28 +1,51 @@
 <?php
-$remitente = $_POST['email'];
-$destinatario = 'magu1988@hotmail.com'; // en esta línea va el mail del destinatario.
-$asunto = 'Consulta desde pagina web'; // acá se puede modificar el asunto del mail
-if (!$_POST){
-?>
 
-<?php
-}else{
-     
-    $cuerpo = "Nombre y Apellido: " . $_POST["nombre"] . "\r\n"; 
-    $cuerpo .= "Email: " . $_POST["email"] . "\r\n";
-    $cuerpo .= "Deja tu mensaje: " . $_POST["mensaje"] . "\r\n";
-    //las líneas de arriba definen el contenido del mail. Las palabras que están dentro de $_POST[""] deben coincidir con el "name" de cada campo. 
-    // Si se agrega un campo al formulario, hay que agregarlo acá.
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
-    $headers  = "MIME-Version: 1.0\n";
-    $headers .= "Content-type: text/plain; charset=utf-8\n";
-    $headers .= "X-Priority: 3\n";
-    $headers .= "X-MSMail-Priority: Normal\n";
-    $headers .= "X-Mailer: php\n";
-    $headers .= "From: \"".$_POST['nombre']." ".$_POST['apellido']."\" <".$remitente.">\n";
+require("vendor/autoload.php");
 
-    mail($destinatario, $asunto, $cuerpo, $headers);
+function sendMail($subject, $body, $email, $name){
+    // config inicial del servidor SMTP
+    $phpmailer = new PHPMailer();
+    $phpmailer->isSMTP();
+    $phpmailer->Host = 'smtp.gmail.com';
+    $phpmailer->SMTPAuth = true;
+    $phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $phpmailer->Port = 465;
+    $phpmailer->Username = 'magui.alonso.g@gmail.com';
+    $phpmailer->Password = 'hxhazrjvpcsybgix';
+    // añadir destinatarios
+    $phpmailer->setFrom('Magda Enciso');
+    $phpmailer->addAddress('magui.alonso.g@gmail.com');
+    // añadir contenido
+    $phpmailer->isHTML(true);
+    $phpmailer->Subject = $subject;
+    $phpmailer->Body = $body;
+    $phpmailer->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    // enviar el email
+    if (!$phpmailer->send()) {
+        echo 'Mailer Error: ' . $phpmailer->ErrorInfo;
+    } else {
+        echo 'Message sent!';
+    }
     
-    include 'gracias-por-contactarte.html'; //se debe crear un html que confirma el envío
 }
+
+$name = $_POST['nombre'];
+$email = $_POST['email'];
+$subject = 'Consulta desde Magda Enciso Web';
+$msg = $_POST['mensaje'];
+
+$body = '<h2 style="color: #1C4C56">Mensaje enviado desde Magda Enciso Web</h2>
+<h3 style="color: #1C4C56">- Nombre:</h3><p>'.$name.'</p>
+<h3 style="color: #1C3C56">- Email:</h3><p>'.$email.'</p>
+<h3 style="color: #1C4C56">- Mensaje:</h3><p>'.$msg.'</p>';
+
+sendMail($subject, $body, $email, $name);
+include 'gracias-por-contactarte.html'; //se debe crear un html que confirma el envío
 ?>
+
+
+

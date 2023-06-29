@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   box-sizing: border-box;
@@ -66,7 +67,7 @@ a {
 
 .img-header-index {
   width: 100%;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .linea-vertical {
@@ -162,10 +163,6 @@ a {
   font-size: 24px;
   font-weight: bold;
 }
-.contenedor-testimoniales .carousel .carousel-inner .carousel-item p .nombre {
-  padding-top: 10px;
-  font-weight: 400;
-}
 .contenedor-testimoniales .carousel .carousel-inner .carousel-item p .profesion {
   color: #8EBDA0;
 }
@@ -201,6 +198,10 @@ a {
   padding: 20px 0 30px 0;
   font-weight: 400;
   text-align: center;
+}
+.contenedor-contacto p a {
+  color: #2D7C8E;
+  font-weight: 600;
 }
 .contenedor-contacto .boton {
   border-radius: 3px;
@@ -397,164 +398,110 @@ footer .contenedor-redes .linkedin:hover {
   width: 100%;
 }
 
-/*------Programas-----*/
-/*
-.grid {
-    position: relative;
-    margin: 0 auto;
-    padding: 1em 0 4em;
-    width: 90%;
-    list-style: none;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+/*------Página Curso-----*/
+.texto-lanzamiento-curso {
+  background-color: #8EBDA0;
+  color: #ffffff;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
 }
 
- ----Common style ----
-
-.grid figure {
-    position: relative;
-    float: center;
-    overflow: hidden;
-    margin: 10px 1%;
-    min-width: 320px;
-    max-height: 360px;
-    width: 30%;
-    background: $verde-2;
-    text-align: center;
-    cursor: pointer;
-
+.contenedor-frase-curso {
+  width: 80%;
+  margin: auto;
+}
+.contenedor-frase-curso p {
+  color: #1C4C56;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  text-align: center;
 }
 
-.grid figure img {
-    position: relative;
-    display: block;
-    min-height: 100%;
-    max-width: 100%;
-    opacity: 0.8;
+.fondo-info-curso {
+  position: relative;
 }
 
-.grid figure figcaption {
-    padding: 2em;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.25em;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+.fondo-info-curso:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: url(../img/img-curso.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 55%;
 }
 
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-    pointer-events: none;
+.contenido-curso {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contenido-curso p {
+  width: 80%;
+  margin: auto;
+  color: #1C4C56;
+  padding: 20px 0;
+}
+.contenido-curso .contenedor-img-curso {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.contenido-curso .contenedor-img-curso img {
+  width: 33.3%;
 }
 
-.grid figure figcaption,
-.grid figure figcaption>a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.acordeon-curso {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.acordeon-curso h4 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #1C4C56;
+}
+.acordeon-curso button:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.acordeon-curso .accordion-button:not(.collapsed)::after {
+  transform: rotate(-180deg);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.acordeon-curso .accordion-button {
+  background-color: #C7D7CD;
+  color: #1C4C56;
+  font-weight: 600;
+}
+.acordeon-curso .collapsed {
+  color: #1C4C56;
+  background-color: #fafafa;
+}
+.acordeon-curso .accordion-body {
+  background-color: #fafafa;
+  color: #1C4C56;
 }
 
----- Anchor will cover the whole item by default 
- For some effects it will show as a button -----
-
-.grid figure figcaption>a {
-    z-index: 1000;
-    text-indent: 200%;
-    white-space: nowrap;
-    font-size: 0;
-    opacity: 0;
-}
-
-.grid figure h2 {
-    word-spacing: -0.15em;
-    font-weight: 300;
-}
-
-.grid figure h2 span {
-    font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-    margin: 0;
-}
-
-.grid figure p {
-    letter-spacing: 1px;
-    font-size: 68.5%;
-}
-
-
-figure.effect-sarah {
-    background: $verde-2;
-}
-
-figure.effect-sarah img {
-    max-width: none;
-    width: -webkit-calc(100% + 20px);
-    width: calc(100% + 20px);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-figure.effect-sarah:hover img {
-    opacity: 0.4;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-figure.effect-sarah figcaption {
-    text-align: left;
-}
-
-figure.effect-sarah h2 {
-    position: relative;
-    overflow: hidden;
-    padding: 0.5em 0;
-}
-
-figure.effect-sarah h2::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    content: '';
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-}
-
-figure.effect-sarah:hover h2::after {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-figure.effect-sarah p {
-    padding: 1em 0;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-}
-
-figure.effect-sarah:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}*/
 /*------Contacto-----*/
 .contenedor-seccion-contacto {
   width: 100%;
@@ -645,6 +592,9 @@ figure.effect-sarah:hover p {
   .navbar .nav-link:hover {
     color: #8EBDA0;
   }
+  .img-header-index {
+    margin-top: 120px;
+  }
   .contenedor-parrafo-index {
     width: 90%;
   }
@@ -729,7 +679,30 @@ figure.effect-sarah:hover p {
   .contenedor-cards-terapias .cards-terapias p {
     padding: 10px 0;
   }
-  /*------Programas-----*/
+  /*------Curso-----*/
+  .contenido-curso {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .contenido-curso .texto-info-curso {
+    width: 70%;
+  }
+  .contenido-curso .texto-info-curso p {
+    color: #1C4C56;
+    width: 80%;
+    padding: 50px 0;
+  }
+  .contenido-curso .contenedor-img-curso {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenido-curso .contenedor-img-curso img {
+    width: 80%;
+  }
   /*------Contacto-----*/
   .contenedor-seccion-contacto form {
     width: 50%;
